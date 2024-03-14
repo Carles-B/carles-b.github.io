@@ -1,0 +1,224 @@
+html {
+    background-image: url("../animated-heart.gif?");
+}
+
+body {
+	  border: #ffcccc 10px groove;
+	  border-radius:300px; 
+	  box-shadow: 5px 5px 10px #FFD904;
+      margin: 50px;
+      padding: 50px;
+	  background-image:  url("../CG_Heart.gif");
+	  background-repeat: no-repeat;
+	  background-position: center center;
+      background-color: #FD58A3;
+	  color: #F7C815;
+	  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+header {
+	border-top: 5px solid red;
+	border-bottom: 5px solid red;
+	border-radius: 1000px;
+	box-shadow: 10px 10px 10px #FFD904;
+	border-left: 3px solid red;
+	border-right: 5px solid red;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: "Love Light", cursive;
+	font-size: 50px
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 25px;
+	font-family: "Love Light", cursive;
+	font-size: 30px
+}
+h3 {
+	margin-top: 3px;
+	margin-bottom: 1px;
+	font-family: "Lovers Quarrel", cursive;
+	font-size: 30px
+}
+.nomargintop {
+	margin-top: 0px;
+}
+.nomarginbottom {
+	margin-bottom: 0px;
+}
+.dividing_line {
+	border-bottom: 3px solid yellow;
+	margin-bottom: 50px;
+}
+a {
+	color: #f70424;
+}
+#navmenu {
+    background:#fe7f6c;
+	border-top: 5px solid red;
+	border-bottom: 5px solid red;
+	border-radius: 1000px;
+	box-shadow: 10px 10px 10px #FFD904;
+    width: 80%;
+	height: 100 px;
+	padding 10px;
+	margin: 0 auto;
+	margin-bottom: 75px;
+}
+#current-page {
+	background-color: #fbc8d6;
+}
+.navwords li {
+  display: inline-table;
+  margin-right: 9%;
+}
+
+.navwords a {
+  display: table;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navwords a:hover {
+  background-color: #fbc8d6;
+  opacity: 0.7;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.galimage {
+  width: 300px; 
+  height: 300px; 
+  margin-right: 10px;
+  margin-bottom: 10px; 
+}
+.galimage:hover {
+	opacity: 0.6;
+}
+.image {
+  height: 300px; 
+  margin-right: 10px;
+  margin-bottom: 10px; 
+}
+.image:hover {
+	opacity: 0.6;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 1000px;
+	box-shadow: 10px 10px 10px #540020;
+  border: 3px solid #ccc;
+  background-color: #fbc8d6;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #fe7f6c; 
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #fe7f6c
+}
+
+input[type="radio"] {
+  appearance: none; 
+  width: 20px;
+  height: 20px; 
+  border: 2px solid #540020; 
+  border-radius: 1000px;
+  margin-left: 20px; 
+}
+
+input[type="radio"]:checked {
+  background-color: #fff4f2; 
+  border-color: #540020; 
+}
+
+input[type="submit"] {
+  appearance: none; 
+  width: 60px;
+  height: 60px; 
+  border: 2px solid #540020; 
+  border-radius: 1000px;
+  background-color: #fff4f2; 
+}
+
+input[type="checkbox"] {
+  appearance: none; 
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-radius: 1000px;
+  margin-right: 10px;
+  border: 2px solid #540020; 
+}
+
+input[type="checkbox"]:checked {
+  background-color: #fff4f2; ; 
+  border-color: #540020; 
+}
+
+input[type="color"] {
+  appearance: none; 
+  width: 60px;
+  height: 30px;
+  vertical-align: middle;  
+  border-radius: 1000px;
+  margin-left: 10px;
+  border: 2px solid #540020; 
+  background-color: #fff4f2; 
+}
+
+input[type="date"] {
+  appearance: none; 
+  width: 100px;
+  height: 20px;
+  vertical-align: middle;  
+  border-radius: 1000px;
+  margin-left: 10px;
+  border: 2px solid #540020; 
+  background-color: #fff4f2; 
+}
+
+input[type="button"] {
+  appearance: none; 
+  width: 20px;
+  height: 20px; 
+  border: 2px solid #232626; 
+  background-color: #8c9590; 
+}
+input[type="button"]:active {
+  background-color: #232626; 
+  border-color: #8c9590; 
+}
+.video-container {
+  max-width: 300px; 
+  margin: 0 auto; 
+}
+
+footer {
+	border-top: 5px solid red;
+	border-bottom: 5px solid red;
+	border-radius: 1000px;
+	box-shadow: 10px 10px 10px #FFD904;
+	border-left: 3px solid red;
+	border-right: 5px solid red;
+	margin-top: 70px;
+	text-align: center;
+	font-size: 12px;
+}

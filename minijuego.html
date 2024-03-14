@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Minijuego</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="./css/style.css" rel="stylesheet" type="text/css"> 
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Lovers+Quarrel&display=swap" rel="stylesheet">
+<link href="./css/Sam-valentin.css" rel="stylesheet" type="text/css">-->
+</head>
+<body>
+
+<header>
+<h1>Carles Barranco</h1>
+<nav id=navmenu>
+<ul class=navwords>
+<li><a href="./index.html"class=navwords>Portada</a></li>
+<li><a href="./contact.html" class=navwords>Contacto</a></li>
+<li><a href="./cv.html" class=navwords>CV</a></li>
+<li><a href="./login.html" id=current-page>Login</a></li>
+<li><a href="./about_me.html" class=navwords>Sobre Mi</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<form>
+<h2>adivinanzas</h2>
+<p>adivina un numero del 1 al 100</p>
+<p id="mensaje"><em>Haz click</em></p>
+<p><label for="numero">Respuesta: </label><input type="text" name="game" id="numero" placeholder="Introduce un numero"/></p>
+<p><label for="adivina">Probar suerte: </label><input type="button" name="try" id="adivina"></p>
+<p>Numero de intentos: <em id="intentos">0</em></p>
+<script>
+	let numero_random = Math.floor(Math.random()*100)+1;
+	let adivina = document.getElementById("adivina");
+	let contador = 0;
+	adivina.addEventListener("click", function(event){
+		console.log("click!");
+		
+		const numero = document.getElementById("numero").value;
+		let mensaje = document.getElementById("mensaje");
+		if (numero === ""){
+			console.log("Has de introducir un numero");
+			mensaje.innerHTML = "Has de introducir un numero";
+			return;
+		}
+		contador++;
+		intentos.innerHTML = contador;
+		if (numero > numero_random){
+			console.log("El numero a adivinar es menor");
+			mensaje.innerHTML = "El numero a adivinar es menor";
+		}
+		else if (numero < numero_random){
+			console.log("El numero a adivinar es mayor");
+			mensaje.innerHTML = "El numero a adivinar es mayor";
+		}
+		else{
+			console.log("Has ganado")
+			mensaje.innerHTML = "Has ganado";
+			contador = 0;
+		}
+	});
+</script>
+</form>
+</main>
+
+<footer>
+<p>Carles Barranco M04-UF1 --> programación con XML</p>
+</footer>
+
+</body>
+</html>

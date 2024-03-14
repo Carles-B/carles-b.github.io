@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Carles html</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="./css/style.css" rel="stylesheet" type="text/css"> 
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<!-- 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Lovers+Quarrel&display=swap" rel="stylesheet">
+<link href="./css/Sam-valentin.css" rel="stylesheet" type="text/css"> -->
+</head>
+<body>
+<header>
+<h1>Carles Barranco</h1>
+<nav id=navmenu>
+<ul class=navwords>
+<li><a href="./index.html" class=navwords>Portada</a></li>
+<li><a href="./contact.html" id=current-page>Contacto</a></li>
+<li><a href="./cv.html" class=navwords>CV</a></li>
+<li><a href="./login.html" class=navwords>Login</a></li>
+<li><a href="./about_me.html" class=navwords>Sobre Mi</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<p>Si quieres contactar conmigo rellena este formulario:</p>
+	<form>
+	<p><label for="name_form">Nombre: </label><input type="text" name="name" id="name_form" placeholder="Pon tu nombre sin los apellidos"/></p>
+	<p><label for="surname_form">Apellidos: </label><input type="text" name="surname" id="surname_form" placeholder="Introduce tus dos apellidos."/></p>
+	<p><label for="mail_form">Correo: </label><input type="text" name="mail" id="mail_form" placeholder="Introduce tu email."/></p>
+	<p><label for="message_form">Mensaje: </label><textarea name="message" id="message_form"  placeholder="Pon lo que sea que quieras decirme."></textarea></p>
+	<p>Por ultimo introduce tu franja de edad:</p>
+	<p><label for="age1">0 - 18</label><input type="radio" id="age1" name="age" value="30"/></p>
+	<p><label for="age2">19 - 37</label><input type="radio" id="age2" name="age" value="60"/></p>
+	<p><label for="age3">38 - 65</label><input type="radio" id="age3" name="age" value="100"/></p>
+	<p><label for="age4">66 - 100</label><input type="radio" id="age4" name="age" value="100"/></p>
+	<p><input type="submit" value="enviar"/></p>
+	</form>
+</main>
+<footer>
+<p>Carles Barranco M04-UF1 --> programación con XML</p>
+</footer>
+</body>
+</html>
