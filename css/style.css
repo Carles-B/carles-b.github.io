@@ -46,8 +46,8 @@ a {
 	color: inherit;
 }
 #navmenu {
-    	background:#68776f;
-    	width: 80%;
+    background:#68776f;
+    width: 80%;
 	height: 100 px;
 	padding 10px;
 	margin: 0 auto;
@@ -56,7 +56,15 @@ a {
 #current-page {
 	background-color: #8c9590;
 }
+#extra {
+		padding: 10px;
+}
+#current-extra {
+	background-color: #8c9590;
+	padding: 10px;
+}
 .navwords li {
+  position: relative;
   display: inline-table;
   margin-right: 9%;
 }
@@ -67,9 +75,35 @@ a {
   text-decoration: none;
 }
 
-.navwords a:hover {
+.navwords li:hover a:hover {
   background-color: #8c9590;
   opacity: 0.7;
+}
+.navwords li.navwords:hover a:hover,
+.navwords li.navwords:hover {
+  padding: 10px;
+  background-color: #8c9590;
+  opacity: 0.85;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #68776f; /* Color de fondo del menú desplegable */
+	padding: 10px;
+	top: 100%;
+	left: 0;
+}
+
+.navwords  li:hover .submenu {
+    display: block; 
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000; 
 }
 
 .gallery {
@@ -83,6 +117,7 @@ a {
   height: 300px; 
   margin-right: 10px;
   margin-bottom: 10px; 
+  animation: fadeInFromLeft 4s;
 }
 .galimage:hover {
 	opacity: 0.6;
@@ -199,3 +234,15 @@ footer {
 	text-align: center;
 	font-size: 12px;
 }
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
